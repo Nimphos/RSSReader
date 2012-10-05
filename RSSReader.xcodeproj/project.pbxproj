@@ -14,7 +14,8 @@
 		048B7EF2161F8A5A0009F053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B7EF1161F8A5A0009F053 /* main.m */; };
 		048B7EF6161F8A5A0009F053 /* _RSSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B7EF5161F8A5A0009F053 /* _RSSAppDelegate.m */; };
 		048B7EF9161F8A5A0009F053 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048B7EF7161F8A5A0009F053 /* MainStoryboard.storyboard */; };
-		048B7EFC161F8A5A0009F053 /* _RSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B7EFB161F8A5A0009F053 /* _RSSViewController.m */; };
+		048B7F04161F8AA20009F053 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B7F03161F8AA20009F053 /* MasterViewController.m */; };
+		048B7F07161F8AC00009F053 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B7F06161F8AC00009F053 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		048B7EE5161F8A5A0009F053 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		048B7EE7161F8A5A0009F053 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		048B7EE9161F8A5A0009F053 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		048B7EED161F8A5A0009F053 /* RSSReader-Info.plist */ = {isa = PBXFileReference; path = "RSSReader-Info.plist"; sourceTree = "<group>"; };
+		048B7EED161F8A5A0009F053 /* RSSReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSReader-Info.plist"; sourceTree = "<group>"; };
 		048B7EEF161F8A5A0009F053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		048B7EF1161F8A5A0009F053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		048B7EF3161F8A5A0009F053 /* RSSReader-Prefix.pch */ = {isa = PBXFileReference; path = "RSSReader-Prefix.pch"; sourceTree = "<group>"; };
-		048B7EF4161F8A5A0009F053 /* _RSSAppDelegate.h */ = {isa = PBXFileReference; path = _RSSAppDelegate.h; sourceTree = "<group>"; };
+		048B7EF3161F8A5A0009F053 /* RSSReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Prefix.pch"; sourceTree = "<group>"; };
+		048B7EF4161F8A5A0009F053 /* _RSSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _RSSAppDelegate.h; sourceTree = "<group>"; };
 		048B7EF5161F8A5A0009F053 /* _RSSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _RSSAppDelegate.m; sourceTree = "<group>"; };
 		048B7EF8161F8A5A0009F053 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		048B7EFA161F8A5A0009F053 /* _RSSViewController.h */ = {isa = PBXFileReference; path = _RSSViewController.h; sourceTree = "<group>"; };
-		048B7EFB161F8A5A0009F053 /* _RSSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _RSSViewController.m; sourceTree = "<group>"; };
+		048B7F02161F8AA20009F053 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		048B7F03161F8AA20009F053 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		048B7F05161F8AC00009F053 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		048B7F06161F8AC00009F053 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +83,11 @@
 				048B7EF4161F8A5A0009F053 /* _RSSAppDelegate.h */,
 				048B7EF5161F8A5A0009F053 /* _RSSAppDelegate.m */,
 				048B7EF7161F8A5A0009F053 /* MainStoryboard.storyboard */,
-				048B7EFA161F8A5A0009F053 /* _RSSViewController.h */,
-				048B7EFB161F8A5A0009F053 /* _RSSViewController.m */,
 				048B7EEC161F8A5A0009F053 /* Supporting Files */,
+				048B7F02161F8AA20009F053 /* MasterViewController.h */,
+				048B7F03161F8AA20009F053 /* MasterViewController.m */,
+				048B7F05161F8AC00009F053 /* DetailViewController.h */,
+				048B7F06161F8AC00009F053 /* DetailViewController.m */,
 			);
 			path = RSSReader;
 			sourceTree = "<group>";
@@ -162,7 +167,8 @@
 			files = (
 				048B7EF2161F8A5A0009F053 /* main.m in Sources */,
 				048B7EF6161F8A5A0009F053 /* _RSSAppDelegate.m in Sources */,
-				048B7EFC161F8A5A0009F053 /* _RSSViewController.m in Sources */,
+				048B7F04161F8AA20009F053 /* MasterViewController.m in Sources */,
+				048B7F07161F8AC00009F053 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

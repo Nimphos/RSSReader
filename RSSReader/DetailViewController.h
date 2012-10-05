@@ -1,5 +1,5 @@
 //
-//  _RSSViewController.h
+//  DetailViewController.h
 //  RSSReader
 //
 //  Created by Mac on 06.10.12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface _RSSViewController : UIViewController
+@interface DetailViewController : UIViewController
 
 @end
