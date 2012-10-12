@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE7646C71628B3E30011A5A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646C61628B3E30011A5A9 /* UIKit.framework */; };
+		CE7646C91628B3E30011A5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646C81628B3E30011A5A9 /* Foundation.framework */; };
+		CE7646CB1628B3E30011A5A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646CA1628B3E30011A5A9 /* CoreGraphics.framework */; };
+		CE7646D11628B3E30011A5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7646CF1628B3E30011A5A9 /* InfoPlist.strings */; };
+		CE7646D31628B3E30011A5A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7646D21628B3E30011A5A9 /* main.m */; };
+		CE7646D71628B3E30011A5A9 /* _RSSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7646D61628B3E30011A5A9 /* _RSSAppDelegate.m */; };
+		CE7646D91628B3E30011A5A9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7646D81628B3E30011A5A9 /* Default.png */; };
+		CE7646DB1628B3E30011A5A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7646DA1628B3E30011A5A9 /* Default@2x.png */; };
+		CE7646DD1628B3E30011A5A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7646DC1628B3E30011A5A9 /* Default-568h@2x.png */; };
+		CE7646E51628B3E30011A5A9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646E41628B3E30011A5A9 /* SenTestingKit.framework */; };
+		CE7646E61628B3E30011A5A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646C61628B3E30011A5A9 /* UIKit.framework */; };
+		CE7646E71628B3E30011A5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7646C81628B3E30011A5A9 /* Foundation.framework */; };
+		CE7646EF1628B3E30011A5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7646ED1628B3E30011A5A9 /* InfoPlist.strings */; };
+		CE7646F21628B3E30011A5A9 /* RSSReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7646F11628B3E30011A5A9 /* RSSReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7646E81628B3E30011A5A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7646B91628B3E30011A5A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7646C11628B3E30011A5A9;
+			remoteInfo = RSSReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE7646C21628B3E30011A5A9 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7646C61628B3E30011A5A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE7646C81628B3E30011A5A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE7646CA1628B3E30011A5A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE7646CE1628B3E30011A5A9 /* RSSReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSReader-Info.plist"; sourceTree = "<group>"; };
+		CE7646D01628B3E30011A5A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE7646D21628B3E30011A5A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE7646D41628B3E30011A5A9 /* RSSReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Prefix.pch"; sourceTree = "<group>"; };
+		CE7646D51628B3E30011A5A9 /* _RSSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _RSSAppDelegate.h; sourceTree = "<group>"; };
+		CE7646D61628B3E30011A5A9 /* _RSSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _RSSAppDelegate.m; sourceTree = "<group>"; };
+		CE7646D81628B3E30011A5A9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE7646DA1628B3E30011A5A9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE7646DC1628B3E30011A5A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE7646E31628B3E30011A5A9 /* RSSReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7646E41628B3E30011A5A9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE7646EC1628B3E30011A5A9 /* RSSReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSReaderTests-Info.plist"; sourceTree = "<group>"; };
+		CE7646EE1628B3E30011A5A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE7646F01628B3E30011A5A9 /* RSSReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSReaderTests.h; sourceTree = "<group>"; };
+		CE7646F11628B3E30011A5A9 /* RSSReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE7646BF1628B3E30011A5A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646C71628B3E30011A5A9 /* UIKit.framework in Frameworks */,
+				CE7646C91628B3E30011A5A9 /* Foundation.framework in Frameworks */,
+				CE7646CB1628B3E30011A5A9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7646DF1628B3E30011A5A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646E51628B3E30011A5A9 /* SenTestingKit.framework in Frameworks */,
+				CE7646E61628B3E30011A5A9 /* UIKit.framework in Frameworks */,
+				CE7646E71628B3E30011A5A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE7646B71628B3E30011A5A9 = {
+			isa = PBXGroup;
+			children = (
+				CE7646CC1628B3E30011A5A9 /* RSSReader */,
+				CE7646EA1628B3E30011A5A9 /* RSSReaderTests */,
+				CE7646C51628B3E30011A5A9 /* Frameworks */,
+				CE7646C31628B3E30011A5A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE7646C31628B3E30011A5A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646C21628B3E30011A5A9 /* RSSReader.app */,
+				CE7646E31628B3E30011A5A9 /* RSSReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7646C51628B3E30011A5A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646C61628B3E30011A5A9 /* UIKit.framework */,
+				CE7646C81628B3E30011A5A9 /* Foundation.framework */,
+				CE7646CA1628B3E30011A5A9 /* CoreGraphics.framework */,
+				CE7646E41628B3E30011A5A9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7646CC1628B3E30011A5A9 /* RSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646D51628B3E30011A5A9 /* _RSSAppDelegate.h */,
+				CE7646D61628B3E30011A5A9 /* _RSSAppDelegate.m */,
+				CE7646CD1628B3E30011A5A9 /* Supporting Files */,
+			);
+			path = RSSReader;
+			sourceTree = "<group>";
+		};
+		CE7646CD1628B3E30011A5A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646CE1628B3E30011A5A9 /* RSSReader-Info.plist */,
+				CE7646CF1628B3E30011A5A9 /* InfoPlist.strings */,
+				CE7646D21628B3E30011A5A9 /* main.m */,
+				CE7646D41628B3E30011A5A9 /* RSSReader-Prefix.pch */,
+				CE7646D81628B3E30011A5A9 /* Default.png */,
+				CE7646DA1628B3E30011A5A9 /* Default@2x.png */,
+				CE7646DC1628B3E30011A5A9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE7646EA1628B3E30011A5A9 /* RSSReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646F01628B3E30011A5A9 /* RSSReaderTests.h */,
+				CE7646F11628B3E30011A5A9 /* RSSReaderTests.m */,
+				CE7646EB1628B3E30011A5A9 /* Supporting Files */,
+			);
+			path = RSSReaderTests;
+			sourceTree = "<group>";
+		};
+		CE7646EB1628B3E30011A5A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7646EC1628B3E30011A5A9 /* RSSReaderTests-Info.plist */,
+				CE7646ED1628B3E30011A5A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE7646C11628B3E30011A5A9 /* RSSReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7646F51628B3E30011A5A9 /* Build configuration list for PBXNativeTarget "RSSReader" */;
+			buildPhases = (
+				CE7646BE1628B3E30011A5A9 /* Sources */,
+				CE7646BF1628B3E30011A5A9 /* Frameworks */,
+				CE7646C01628B3E30011A5A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSReader;
+			productName = RSSReader;
+			productReference = CE7646C21628B3E30011A5A9 /* RSSReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7646E21628B3E30011A5A9 /* RSSReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7646F81628B3E30011A5A9 /* Build configuration list for PBXNativeTarget "RSSReaderTests" */;
+			buildPhases = (
+				CE7646DE1628B3E30011A5A9 /* Sources */,
+				CE7646DF1628B3E30011A5A9 /* Frameworks */,
+				CE7646E01628B3E30011A5A9 /* Resources */,
+				CE7646E11628B3E30011A5A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7646E91628B3E30011A5A9 /* PBXTargetDependency */,
+			);
+			name = RSSReaderTests;
+			productName = RSSReaderTests;
+			productReference = CE7646E31628B3E30011A5A9 /* RSSReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7646B91628B3E30011A5A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = _RSS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Admin;
+			};
+			buildConfigurationList = CE7646BC1628B3E30011A5A9 /* Build configuration list for PBXProject "RSSReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE7646B71628B3E30011A5A9;
+			productRefGroup = CE7646C31628B3E30011A5A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE7646C11628B3E30011A5A9 /* RSSReader */,
+				CE7646E21628B3E30011A5A9 /* RSSReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE7646C01628B3E30011A5A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646D11628B3E30011A5A9 /* InfoPlist.strings in Resources */,
+				CE7646D91628B3E30011A5A9 /* Default.png in Resources */,
+				CE7646DB1628B3E30011A5A9 /* Default@2x.png in Resources */,
+				CE7646DD1628B3E30011A5A9 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7646E01628B3E30011A5A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646EF1628B3E30011A5A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE7646E11628B3E30011A5A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7646BE1628B3E30011A5A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646D31628B3E30011A5A9 /* main.m in Sources */,
+				CE7646D71628B3E30011A5A9 /* _RSSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7646DE1628B3E30011A5A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7646F21628B3E30011A5A9 /* RSSReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7646E91628B3E30011A5A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7646C11628B3E30011A5A9 /* RSSReader */;
+			targetProxy = CE7646E81628B3E30011A5A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE7646CF1628B3E30011A5A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7646D01628B3E30011A5A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE7646ED1628B3E30011A5A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7646EE1628B3E30011A5A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE7646F31628B3E30011A5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE7646F41628B3E30011A5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7646F61628B3E30011A5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
+				INFOPLIST_FILE = "RSSReader/RSSReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE7646F71628B3E30011A5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
+				INFOPLIST_FILE = "RSSReader/RSSReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE7646F91628B3E30011A5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RSSReader.app/RSSReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
+				INFOPLIST_FILE = "RSSReaderTests/RSSReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE7646FA1628B3E30011A5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RSSReader.app/RSSReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
+				INFOPLIST_FILE = "RSSReaderTests/RSSReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7646BC1628B3E30011A5A9 /* Build configuration list for PBXProject "RSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7646F31628B3E30011A5A9 /* Debug */,
+				CE7646F41628B3E30011A5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7646F51628B3E30011A5A9 /* Build configuration list for PBXNativeTarget "RSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7646F61628B3E30011A5A9 /* Debug */,
+				CE7646F71628B3E30011A5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE7646F81628B3E30011A5A9 /* Build configuration list for PBXNativeTarget "RSSReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7646F91628B3E30011A5A9 /* Debug */,
+				CE7646FA1628B3E30011A5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE7646B91628B3E30011A5A9 /* Project object */;
+}
