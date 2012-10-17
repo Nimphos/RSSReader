@@ -7,6 +7,7 @@
 //
 
 #import "_RSSAppDelegate.h"
+#import "_RSSInitialView.h"
 
 @implementation _RSSAppDelegate
 
@@ -19,6 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    _RSSInitialView *initialView = [[[_RSSInitialView alloc] init] autorelease];
+    UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:initialView] autorelease];
+    self.window.rootViewController = navigationController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
