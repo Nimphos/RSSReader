@@ -44,7 +44,10 @@
         [barButtonItem release];
         
         [self addCellWithName:@"Lenta.ru" andURL:@"http://lenta.ru/l/r/EX/import.rss"];
+<<<<<<< HEAD
         [self addCellWithName:@"Вести.ru" andURL:@"http://www.vesti.ru/vesti.rss"];
+=======
+>>>>>>> ab7a69759e961dd5dfff946098afb4e025182f88
     }
     return self;
 }

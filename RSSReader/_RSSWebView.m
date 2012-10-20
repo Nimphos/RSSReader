@@ -54,6 +54,10 @@
 
 -(void)dealloc
 {
+<<<<<<< HEAD
+=======
+    NSLog(@"dealloc RSSReader");
+>>>>>>> ab7a69759e961dd5dfff946098afb4e025182f88
     [self.rssWebView release];
     [super dealloc];
 }
