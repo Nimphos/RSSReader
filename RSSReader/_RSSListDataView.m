@@ -73,7 +73,7 @@
 {
     NSLog(@"SHOW FEED !!!!!");
     _RSSWebView *webView=[[_RSSWebView alloc] initWithFeed:[self.parserRSS.feedArray objectAtIndex:index] ];
-    webView.title=[[self.parserRSS.feedArray objectAtIndex:index] title];
+    webView.title=[[self.parserRSS.feedArray objectAtIndex:index] feedTitle];
     [self.navigationController pushViewController:webView animated:YES];
     [webView release];
 }
