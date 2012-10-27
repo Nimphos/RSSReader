@@ -13,9 +13,12 @@
 -(id)initWithTitle:(NSString*)title Description:(NSString *)description URL:(NSString *)URL
 {
     self=[super init];
-    self.feedTitle=[[NSString alloc] initWithFormat:@"%@",title];
-    self.feedDescription=[[NSString alloc] initWithFormat:@"%@",description];
-    self.feedURL=[[NSURL alloc] initWithString:URL];
+    if(self)
+    {
+        self.feedTitle=[[NSString alloc] initWithFormat:@"%@",title];
+        self.feedDescription=[[NSString alloc] initWithFormat:@"%@",description];
+        self.feedURL=[[NSURL alloc] initWithString:URL];
+    }
     
     return self;
 }
@@ -25,6 +28,9 @@
     [self.feedTitle release];
     [self.feedDescription release];
     [self.feedURL release];
+    _feedTitle = nil;
+    _feedDescription = nil;
+    _feedURL = nil;
     [super dealloc];
 }
 

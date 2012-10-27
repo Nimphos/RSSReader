@@ -11,10 +11,10 @@
 
 @interface RSSParser : NSObject<NSXMLParserDelegate>
 
-@property(unsafe_unretained) NSMutableArray* feedArray;
-@property(nonatomic, retain) NSString * auxiliaryStr;
-@property(nonatomic, retain) NSString * title;
-@property(nonatomic, retain) NSString * description;
-@property(nonatomic, retain) NSString * content;
+@property(unsafe_unretained) NSMutableArray *feedArray;
+@property(nonatomic, retain) NSString *auxiliaryStr;
+@property(nonatomic, retain) NSString *title;
+@property(nonatomic, retain) NSString *description;
+@property(nonatomic, retain) NSString *url;
 
 @end

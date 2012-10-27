@@ -23,8 +23,8 @@
 - (UITableViewCell*) tableView: (UITableView*) tableView cellForRowAtIndexPath: (NSIndexPath*) index_path
 {
     UITableViewCell *cell = [[[UITableViewCell alloc] init] autorelease];
-    FeedItem *rssFeed =[self.feedTable objectAtIndex:index_path.row];
-    cell.textLabel.text = rssFeed.feedTitle;
+    FeedItem *feedItem =[self.feedTable objectAtIndex:index_path.row];
+    cell.textLabel.text = feedItem.feedTitle;
     return cell;
 }
 
@@ -41,6 +41,7 @@
 
 -(void)dealloc
 {
+    _feedTable = nil;
     [super dealloc];
 }
 

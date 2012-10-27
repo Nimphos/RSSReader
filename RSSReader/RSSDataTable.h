@@ -20,6 +20,6 @@
 @property(nonatomic, retain) RSSItem *rssItem;
 @property(nonatomic, retain) NSMutableArray *rssItemArray;
 
--(void)addCellToTableWithName:(NSString *) name andURL:(NSString *) url;
+-(void)addCellToTableWithName:(NSString *) name URL:(NSString *) url;
 
 @end

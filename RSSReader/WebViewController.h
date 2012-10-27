@@ -11,8 +11,8 @@
 
 @interface WebViewController : UIViewController<UITableViewDataSource , UITableViewDelegate>
 
-@property(nonatomic, retain)FeedItem *rssFeed;
-@property(nonatomic, retain)UIWebView *rssWebView;
+@property(nonatomic, retain)FeedItem *feedItem;
+@property(nonatomic, retain)UIWebView *feedWebView;
 
 -(id)initWithFeed:(FeedItem *)feed;
 

@@ -33,7 +33,7 @@
         {
             self.title=nil;
             self.description=nil;
-            self.content=nil;
+            self.url=nil;
         }
         if([self.auxiliaryStr isEqualToString:@"title"])
         {
@@ -45,16 +45,17 @@
         if([self.auxiliaryStr isEqualToString:@"description"])
         {
             if(self.description==nil)
-                self.description=[[[NSString alloc] initWithFormat:@"%@",character] autorelease];
+                self.description=[[NSString alloc] initWithFormat:@"%@",character];
             
             self.description=[self.description stringByAppendingString:character];
+            NSLog(@"Appending description RSSParser");
         }
         if([self.auxiliaryStr isEqualToString:@"link"])
         {
-            if(self.content==nil)
-                self.content=[[[NSString alloc] initWithFormat:@"%@",character] autorelease];
+            if(self.url==nil)
+                self.url=[[[NSString alloc] initWithFormat:@"%@",character] autorelease];
             
-            self.content=[self.content stringByAppendingString:character];
+            self.url=[self.url stringByAppendingString:character];
         }
     }
 }
@@ -63,7 +64,7 @@
 {
     if([elementName isEqualToString:@"item"])
     {
-        FeedItem * feed=[[[FeedItem alloc] initWithTitle:self.title Description:self.description URL:self.content] autorelease];
+        FeedItem * feed=[[[FeedItem alloc] initWithTitle:self.title Description:self.description URL:self.url] autorelease];
         [self.feedArray addObject:feed];
     }
 }
@@ -74,7 +75,12 @@
     [self.auxiliaryStr release];
     [self.title release];
     [self.description release];
-    [self.content release];
+    [self.url release];
+    _feedArray = nil;
+    _auxiliaryStr = nil;
+    _title = nil;
+    _description = nil;
+    _url = nil;
     [super dealloc];
 }
 

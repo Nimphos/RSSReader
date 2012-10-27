@@ -12,10 +12,22 @@
 
 -(id)initWithName:(NSString *)name url:(NSString *)url
 {
-    self.rssName = name;
-    self.rssUrl = url;
-    
+    self=[super init];
+    if(self)
+    {
+        self.rssName = [[NSString alloc] initWithFormat:@"%@", name];
+        self.rssUrl = [[NSString alloc] initWithFormat:@"%@", url];
+    }
     return self;
+}
+
+-(void)dealloc
+{
+    [self.rssName release];
+    _rssName = nil;
+    [self.rssUrl release];
+    _rssUrl = nil;
+    [super dealloc];
 }
 
 @end

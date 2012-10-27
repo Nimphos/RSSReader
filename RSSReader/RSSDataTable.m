@@ -37,7 +37,7 @@
     [self.delegate showRSS:indexPath.row];
 }
 
--(void)addCellToTableWithName:(NSString *) name andURL:(NSString *) url
+-(void)addCellToTableWithName:(NSString *) name URL:(NSString *) url
 {
     self.rssItem = [[RSSItem alloc] initWithName:name url:url];
     [self.rssItemArray addObject:self.rssItem];
@@ -47,6 +47,8 @@
 -(void)dealloc
 {
     [self.rssItemArray release];
+    _rssItemArray = nil;
+    _rssItem = nil;
     [super dealloc];
 }
 

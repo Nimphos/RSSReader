@@ -16,6 +16,7 @@
 
 -(id)initWithURL:(NSString *)url
 {
+    NSLog(@"Init With URL (FeedViewController)");
     self = [super init];
     if(self)
     {
@@ -73,6 +74,11 @@
     [self.listTable release];
     [self.parserRSS release];
     [self.parcerXML release];
+    _listTable = nil;
+    _parcerXML = nil;
+    _parserRSS = nil;
+    _url = nil;
+    _tableFeeds = nil;
     [super dealloc];
 }
 

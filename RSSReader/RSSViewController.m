@@ -39,7 +39,7 @@
 
 -(void)addCellWithName:(NSString *)name andURL:(NSString *)url
 {
-    [self.tableData addCellToTableWithName:name andURL:url];
+    [self.tableData addCellToTableWithName:name URL:url];
     [self.mainTable reloadData];
 }
 
@@ -54,8 +54,8 @@
                                                    cancelButtonTitle:@"OK"
                                                    otherButtonTitles:nil] autorelease];
     [message setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
-    [[message textFieldAtIndex:0] setText:@"Вести"];
-    [[message textFieldAtIndex:1] setText:@"http://www.vesti.ru/vesti.rss"];
+    [[message textFieldAtIndex:0] setText:@"Подробности: культура"];
+    [[message textFieldAtIndex:1] setText:@"http://podrobnosti.ua/rss/culture.rss/"];
     [[message textFieldAtIndex:1] setSecureTextEntry:NO];
     [message show];
 }
@@ -81,7 +81,9 @@
 - (void)dealloc
 {
     [self.mainTable release];
+    _mainTable = nil;
     [self.tableData release];
+    _tableData = nil;
     [super dealloc];
 }
 
