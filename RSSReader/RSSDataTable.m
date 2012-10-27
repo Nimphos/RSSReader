@@ -1,55 +1,52 @@
 //
-//  _RSSTableData.m
+//  RSSDataTable.m
 //  RSSReader
 //
 //  Created by Admin on 13/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSTableData.h"
+#import "RSSDataTable.h"
 
-@implementation _RSSTableData
+@implementation RSSDataTable
 
 - (id)init
 {
     self = [super init];
     if(self)
     {
-        self.dataTableNames = [[NSMutableArray alloc] init];
-        self.dataTableURL = [[NSMutableArray alloc] init];
+        self.rssItemArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
 - (NSInteger) tableView: (UITableView*) tableView numberOfRowsInSection: (NSInteger) section
 {
-    return [self.dataTableNames count];
+    return [self.rssItemArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell * cell = [[[UITableViewCell alloc] init] autorelease];
-    cell.textLabel.text = [self.dataTableNames objectAtIndex:indexPath.row];
-    
+    cell.textLabel.text = [[self.rssItemArray objectAtIndex:indexPath.row] rssName];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.delegat showRSS:indexPath.row];
+    [self.delegate showRSS:indexPath.row];
 }
 
--(void)addCellToTableWithName:(NSString *) name andURL:(NSString *) URL
+-(void)addCellToTableWithName:(NSString *) name andURL:(NSString *) url
 {
-    [self.dataTableNames addObject:name];
-    [self.dataTableURL addObject:URL];
+    self.rssItem = [[RSSItem alloc] initWithName:name url:url];
+    [self.rssItemArray addObject:self.rssItem];
+    [self.rssItem release];
 }
 
 -(void)dealloc
 {
-    [self.dataTableNames release];
-    [self.dataTableURL release];
-    [self dealloc];
+    [self.rssItemArray release];
     [super dealloc];
 }
 

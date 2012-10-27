@@ -1,5 +1,5 @@
 //
-//  _RSSParser.h
+//  RSSParser.h
 //  RSSReader
 //
 //  Created by Admin on 15/10/2012.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "_RSSFeed.h"
+#import "FeedItem.h"
 
-@interface _RSSParser : NSObject<NSXMLParserDelegate>
+@interface RSSParser : NSObject<NSXMLParserDelegate>
 
 @property(unsafe_unretained) NSMutableArray* feedArray;
 @property(nonatomic, retain) NSString * auxiliaryStr;

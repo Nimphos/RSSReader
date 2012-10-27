@@ -1,20 +1,20 @@
 //
-//  _RSSWebView.m
+//  WebViewController.m
 //  RSSReader
 //
 //  Created by Admin on 17/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSWebView.h"
+#import "WebViewController.h"
 
-@interface _RSSWebView ()
+@interface WebViewController ()
 
 @end
 
-@implementation _RSSWebView
+@implementation WebViewController
 
--(id)initWithFeed:(_RSSFeed *)feed
+-(id)initWithFeed:(FeedItem *)feed
 {
     self=[super init];
     self.rssFeed=feed;
@@ -32,15 +32,6 @@
     return self;
 }
 
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}*/
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -54,10 +45,6 @@
 
 -(void)dealloc
 {
-<<<<<<< HEAD
-=======
-    NSLog(@"dealloc RSSReader");
->>>>>>> ab7a69759e961dd5dfff946098afb4e025182f88
     [self.rssWebView release];
     [super dealloc];
 }

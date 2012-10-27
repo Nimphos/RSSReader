@@ -1,5 +1,5 @@
 //
-//  _RSSAppDelegate.h
+//  RSSAppDelegate.h
 //  RSSReader
 //
 //  Created by Admin on 12/10/2012.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSSViewController.h"
 
-@interface _RSSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface RSSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

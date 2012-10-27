@@ -1,14 +1,14 @@
 //
-//  _RSSTableFeeds.m
+//  FeedDataTable.m
 //  RSSReader
 //
 //  Created by Admin on 16/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSTableFeeds.h"
+#import "FeedDataTable.h"
 
-@implementation _RSSTableFeeds
+@implementation FeedDataTable
 
 -(id)initWithFeedTable:(NSArray *)feedArray
 {
@@ -23,7 +23,7 @@
 - (UITableViewCell*) tableView: (UITableView*) tableView cellForRowAtIndexPath: (NSIndexPath*) index_path
 {
     UITableViewCell *cell = [[[UITableViewCell alloc] init] autorelease];
-    _RSSFeed *rssFeed =[self.feedTable objectAtIndex:index_path.row];
+    FeedItem *rssFeed =[self.feedTable objectAtIndex:index_path.row];
     cell.textLabel.text = rssFeed.feedTitle;
     return cell;
 }

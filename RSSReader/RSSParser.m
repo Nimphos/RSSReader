@@ -1,14 +1,14 @@
 //
-//  _RSSParser.m
+//  RSSParser.m
 //  RSSReader
 //
 //  Created by Admin on 15/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSParser.h"
+#import "RSSParser.h"
 
-@implementation _RSSParser
+@implementation RSSParser
 
 -(id)init
 {
@@ -63,7 +63,7 @@
 {
     if([elementName isEqualToString:@"item"])
     {
-        _RSSFeed * feed=[[[_RSSFeed alloc] initWithTitle:self.title Description:self.description URL:self.content] autorelease];
+        FeedItem * feed=[[[FeedItem alloc] initWithTitle:self.title Description:self.description URL:self.content] autorelease];
         [self.feedArray addObject:feed];
     }
 }

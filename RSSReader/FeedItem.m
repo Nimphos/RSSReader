@@ -1,14 +1,14 @@
 //
-//  _RSSFeed.m
+//  FeedItem.m
 //  RSSReader
 //
 //  Created by Admin on 15/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSFeed.h"
+#import "FeedItem.h"
 
-@implementation _RSSFeed
+@implementation FeedItem
 
 -(id)initWithTitle:(NSString*)title Description:(NSString *)description URL:(NSString *)URL
 {

@@ -1,5 +1,5 @@
 //
-//  _RSSListDataView.h
+//  FeedViewController.h
 //  RSSReader
 //
 //  Created by Admin on 15/10/2012.
@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "_RSSParser.h"
-#import "_RSSFeed.h"
-#import "_RSSTableFeeds.h"
-#import "_RSSWebView.h"
+#import "RSSParser.h"
+#import "FeedItem.h"
+#import "FeedDataTable.h"
+#import "WebViewController.h"
 
 
-@interface _RSSListDataView : UITableViewController<ShowFeedProtocol>
+@interface FeedViewController : UITableViewController<ShowFeedProtocol>
 
 @property(nonatomic, retain)UITableView *listTable;
 @property(nonatomic, retain)NSXMLParser *parcerXML;
-@property(nonatomic, retain)_RSSParser *parserRSS;
+@property(nonatomic, retain)RSSParser *parserRSS;
 @property(nonatomic, retain)NSURL *url;
-@property(nonatomic, retain)_RSSTableFeeds *tableFeeds;
+@property(nonatomic, retain)FeedDataTable *tableFeeds;
 
 -(id)initWithURL:(NSString *)url;
 

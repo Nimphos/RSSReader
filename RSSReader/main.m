@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "_RSSAppDelegate.h"
+#import "RSSAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([_RSSAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RSSAppDelegate class]));
     }
 }

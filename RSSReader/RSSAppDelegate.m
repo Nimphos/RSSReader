@@ -1,15 +1,14 @@
 //
-//  _RSSAppDelegate.m
+//  RSSAppDelegate.m
 //  RSSReader
 //
 //  Created by Admin on 12/10/2012.
 //  Copyright (c) 2012 Admin. All rights reserved.
 //
 
-#import "_RSSAppDelegate.h"
-#import "_RSSInitialView.h"
+#import "RSSAppDelegate.h"
 
-@implementation _RSSAppDelegate
+@implementation RSSAppDelegate
 
 - (void)dealloc
 {
@@ -20,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    _RSSInitialView *initialView = [[[_RSSInitialView alloc] init] autorelease];
+    RSSViewController *initialView = [[[RSSViewController alloc] init] autorelease];
     UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:initialView] autorelease];
     self.window.rootViewController = navigationController;
     // Override point for customization after application launch.

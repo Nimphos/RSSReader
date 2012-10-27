@@ -1,5 +1,5 @@
 //
-//  _RSSFeed.h
+//  FeedItem.h
 //  RSSReader
 //
 //  Created by Admin on 15/10/2012.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface _RSSFeed : NSObject
+@interface FeedItem : NSObject
 
 @property(nonatomic, retain) NSString *feedTitle;
 @property(nonatomic, retain) NSString *feedDescription;
